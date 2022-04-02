@@ -15,14 +15,14 @@ def add_num_to_dict(num):
 				running_list.append([i,p])
 	combinations[num] = [running_list]
 
-num_of_stairs = int(input("Enter the number of stairs: "))
+num_of_stairs = int(input("Enter the number of stair(s): "))
 print("\n")
 
 for num in range(2, num_of_stairs+1):
 	add_num_to_dict(num)
 
 for key in combinations.keys():
-	print("---- Combinations for ", key, " Stairs are---------")
+	print("---- Combinations for ", key, " Stair(s) are---------")
 	for i in combinations[key]: 
 		print(i)
 		print("Total Combinations: ", len(i), "\n")
